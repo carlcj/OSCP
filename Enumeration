@@ -101,6 +101,15 @@ mkdir /tmp/nfs
 /sbin/mount.nfs <targetip>:/home/box /tmp/nfs
 
 
+-------LDAP Enumeration------
+
+Use "ldapsearch" in kali or use nmap script.
+
+for example see the walkthrough for lightweight machine of hackthebox
+https://0xrick.github.io/hack-the-box/lightweight/
+
+----------------------------------------------------
+
 
 
 
