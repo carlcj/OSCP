@@ -105,6 +105,9 @@ mkdir /tmp/nfs
 
 Use "ldapsearch" in kali or use nmap script.
 
+ldapsearch -x -h lightweight.htb -b "dc=lightweight,dc=htb"
+nmap --script=ldap-search lightweight.htb
+
 for example see the walkthrough for lightweight machine of hackthebox
 https://0xrick.github.io/hack-the-box/lightweight/
 
