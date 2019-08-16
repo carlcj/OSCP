@@ -43,6 +43,16 @@ root@kali:~# smbclient -L <targetip> -U username -p 445
 smbclient \\\\<targetip>\\ShareName
 smbclient \\\\<targetip>\\ShareName -U john
 
+#Mount SMB shares to the kali Linux
+
+mount -t cifs //ipaddress/Backups -o user=guest,password= /mnt/backups
+
+PS Note: CIFS for windows and NFS for linux hosts.
+
+#Mount VDI images in SMB Share to the kali Linux
+
+guestmount --add /mnt/backups/Windows/Linux/ImageBackup/Backup/example.vhd --inspector --ro /mnt/vhd
+
 # enumarete with smb-shares, -a “do everything” option
 enum4linux -a 192.168.1.120
 
